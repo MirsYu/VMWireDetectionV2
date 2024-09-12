@@ -1,7 +1,6 @@
 ﻿using Prism.Ioc;
 using Prism.Unity;
 using System.Windows;
-using System.ComponentModel;
 using VMWireDetectionV2.Services;
 using VMWireDetectionV2.Views;
 

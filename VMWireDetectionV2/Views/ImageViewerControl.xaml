@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="VMWireDetectionV2.Views.ImageViewerControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:VMWireDetectionV2.Views"
+             Width="800" Height="450">
+    <Grid>
+        <ComboBox ItemsSource="{Binding ImageResults}"
+                  DisplayMemberPath="Name"
+                  SelectedItem="{Binding SelectedResult, Mode=TwoWay}"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Width="200"
+                  Margin="10"/>
+        <Image Source="{Binding SelectedResult.Image}" 
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="220,10,10,10"
+               Width="550"
+               Height="400"/>
+    </Grid>
+</UserControl>

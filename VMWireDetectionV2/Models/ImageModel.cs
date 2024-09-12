@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace VMWireDetectionV2.Models
+﻿namespace VMWireDetectionV2.Models
 {
     /// <summary>
     /// 图像模型，存储图像数据和检测结果

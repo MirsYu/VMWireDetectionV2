@@ -1,5 +1,5 @@
-﻿using Prism.Mvvm;
-using Prism.Commands;
+﻿using Prism.Commands;
+using Prism.Mvvm;
 using System.Threading.Tasks;
 using VMWireDetectionV2.Models;
 using VMWireDetectionV2.Services;
