@@ -1,20 +1,25 @@
 ﻿using Prism.Ioc;
+using Prism.Unity;
 using System.Windows;
-using VMWireDetectionV2.Views;
+using System.ComponentModel;
 using VMWireDetectionV2.Services;
+using VMWireDetectionV2.Views;
 
-namespace VMWireDetection
+namespace VMWireDetectionV2.Utilities
 {
-    public partial class App : Prism.Unity.PrismApplication
+    /// <summary>
+    /// 应用程序启动类，配置依赖注入
+    /// </summary>
+    public partial class App : PrismApplication
     {
         protected override Window CreateShell()
         {
-            return Container.Resolve<MainWindow>(); // 解析主窗口实例
+            return Container.Resolve<MainWindow>(); // 解析主窗口
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            // 注册所有服务
+            // 注册服务
             containerRegistry.Register<IImageProcessingService, ImageProcessingService>();
             containerRegistry.Register<IDetectionService, DetectionService>();
         }

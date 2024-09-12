@@ -1,0 +1,12 @@
+﻿<Window x:Class="VMWireDetectionV2.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="VM Wire Detection" Height="350" Width="525">
+    <Grid>
+        <Button Content="加载图像" Command="{Binding LoadImageCommand}" CommandParameter="filePath" />
+        <Image Source="{Binding CurrentImage.ImageData}" />
+        <TextBlock Text="{Binding CurrentImage.DetectionResult}" />
+    </Grid>
+</Window>
