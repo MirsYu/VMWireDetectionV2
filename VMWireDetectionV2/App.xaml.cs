@@ -1,11 +1,11 @@
 ﻿using Prism.Ioc;
+using Prism.Unity;
 using System.Diagnostics;
 using System.Windows;
 using VMWireDetectionV2.Services;
-using VMWireDetectionV2.Views;
 using VMWireDetectionV2.Vision;
 
-namespace VMWireDetectionV2
+namespace VMWireDetectionV2.Views
 {
     public partial class App : Prism.Unity.PrismApplication
     {
@@ -44,6 +44,5 @@ namespace VMWireDetectionV2
                 Debug.WriteLine("Container is null.");
             }
         }
-
     }
 }
